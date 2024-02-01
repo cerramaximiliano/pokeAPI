@@ -16,6 +16,7 @@ export default function Navbar () {
                             <Link to="/">Logout</Link>
                         </div>
                     </div>
+
                     <div>
                         <img className="h-[50px]" src={logo} alt="" />
                     </div>

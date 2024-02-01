@@ -5,12 +5,12 @@ function Detail ({name, base, height, weight, image}){
 
     return (
         <>
-            <div className="">
-                <div className="flex">
+            <div className="flex flex-col justify-center items-center max-w-[800px] min-w-full m-auto">
+                <div className="flex w-1/2 justify-center">
                     <h1>{name}</h1>
-                    <p>{base}</p>
+                    <p className="ml-5">{base}</p>
                 </div>
-                <div>
+                <div className="w-1/2">
                     <img src={image} alt="" className="w-full"/>
                 </div>
                 <div>
@@ -20,6 +20,7 @@ function Detail ({name, base, height, weight, image}){
                 </div>
 
             </div>
+
         </>
     )
 };

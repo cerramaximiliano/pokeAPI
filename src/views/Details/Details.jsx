@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Detail from "../../components/Detail/Detail";
+import Footer from "../../components/Footer/Footer";
+
 
 function Details() {
   const { id } = useParams();
@@ -32,6 +34,7 @@ function Details() {
         : <div>Results not Found</div>
       
       }
+      <Footer></Footer>
     </>
   );
 }
