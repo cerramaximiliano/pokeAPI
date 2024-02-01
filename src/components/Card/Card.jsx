@@ -21,7 +21,7 @@ function Card ({ id, name, image, height, weight }) {
                     <p>height {height}</p>
                     <p>weight {weight}</p>
 
-                    <button className="mt-5 mb-5 bg-transparent border-2 border-yellow-600 rounded-lg px-3 py-2 text-yellow-400 cursor-pointer hover:bg-yellow-600 hover:text-yellow-200" onClick={() => navigate(`/details/${id}`)} >details</button>
+                    <button className="text-sm mt-5 mb-5 bg-transparent border-2 border-yellow-600 rounded-lg px-3 py-2 text-yellow-400 cursor-pointer hover:bg-yellow-600 hover:text-yellow-200" onClick={() => navigate(`/details/${id}`)} >details</button>
                 </div>
 
 

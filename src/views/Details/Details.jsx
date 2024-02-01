@@ -16,7 +16,7 @@ function Details() {
       try {
         const response = await axios(url);
         const pokemonData = response.data;
-
+        console.log(pokemonData)
         setDetails(pokemonData);
       } catch (error) {
         console.log(error);
