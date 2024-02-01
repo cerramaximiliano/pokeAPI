@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function Footer (){
-    const github = './src/assets/github-mark-white.png'
+    const github = '/assets/github-mark-white.png'
 
     const handleClick = () => {
         window.open("https://github.com/cerramaximiliano/pokeAPI", "_blank")

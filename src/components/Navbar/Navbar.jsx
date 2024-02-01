@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Navbar () {
-    const logo = '../src/assets/pokeapi_logo.png';
+    const logo = '/assets/pokeapi_logo.png';
 
     return (
         <>
