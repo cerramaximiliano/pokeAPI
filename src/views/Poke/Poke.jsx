@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 function Poke () {
     const [ pokes, setPokes ] = useState([]);
 
+    // function to fetch API data
     const fetchData = async () => {
         try {
             const result = await axios('https://pokeapi.co/api/v2/pokemon?limit=10');
@@ -21,11 +22,12 @@ function Poke () {
         }
       };
       
+      // useEffect to fetch data
       useEffect(() => {
         fetchData();
       }, []);
 
-
+      // Handle to sort poke state elements
       const handleSort = (sortType) => {
         const sortedPokes = [...pokes];  
         sortedPokes.sort((a, b) => {
