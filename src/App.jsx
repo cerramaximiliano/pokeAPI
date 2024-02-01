@@ -1,23 +1,25 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from './views/Home/Home';
+import Poke from './views/Poke/Poke';
+import Details from './views/Details/Details';
+import Navbar from './components/Navbar/Navbar';
+import './App.css';
+
+
 
 function App() {
 
+  const {pathname} = useLocation();
   return (
     <>
-      <div>
 
-      </div>
-      <h1>Poke API</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Home
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-
+      {pathname !== '/' && <Navbar></Navbar>}
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/poke" element={<Poke/>}></Route>
+        <Route path='/details/:id' element={<Details/>}></Route>
+      </Routes>
     </>
   )
 }
