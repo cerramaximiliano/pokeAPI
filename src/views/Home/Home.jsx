@@ -5,8 +5,8 @@ import Footer from "../../components/Footer/Footer";
 function Home () {
 
     const navigate = useNavigate();
-    const logo = '../src/assets/pokeapi_logo.png';
-    const fooTalentLogo = '../src/assets/footalent_logo.jpeg';
+    const logo = '/assets/pokeapi_logo.png';
+    const fooTalentLogo = '../public/assets/footalent_logo.jpeg';
 
     return (
         <>
