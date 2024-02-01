@@ -30,7 +30,7 @@ function Details() {
   return (
     <>
       {details ? 
-      <Detail name={details.name} base={details.base_experience} height={details.height} weight={details.weight} image={details.sprites.front_default}/>
+      <Detail name={details.name} base={details.base_experience} height={details.height} weight={details.weight} image={details.sprites.front_default} abilities={details.abilities}/>
         : <div>Results not Found</div>
       
       }
